@@ -1,0 +1,248 @@
+
+@media (max-width: 480px) and (max-width: 768px) {
+.navbar .brand {margin-top: 20px;}
+#searchBar button .icon-search {color: white;}
+
+}
+.navbar .brand {margin-top: 20px;}
+
+@media (max-width: 768px) {
+
+.navbar .btn-navbar .icon-bar {color: white; }
+
+}
+
+a {color: #4573ff;}
+.container-fluid {max-width:1250px;}
+#mainNav .container-fluid {min-height:90px; line-height:90px;}
+.brand {width:150px; margin-top:20px;}
+#fullArticle p, #fullArticle li {font-size: 16px; color: #474C5C;}
+#fullArticle h1,h2,h3, h4 {color:#070D23;}
+#fullArticle img {max-width:100%;}
+#sidebar h3 {font-size:18px; text-transform: none;}
+#sidebar .nav-list a {font-size:15px; padding: 8px 15px 8px 0; color: #474C5C;}
+#sidebar .nav-list a:hover {color: #4573ff;}
+.articleList {font-size:18px;}
+.articleFoot p, .articleFoot time {font-size: 16px;}
+.most-pop-articles .popArticles a {color: #4573ff;}
+.navbar .navbar-inner {background: #4573FF;}
+.navbar .nav li a, .navbar .icon-private-w {color: white;}
+#main-content {padding: 0;}
+
+@media (max-width: 600px) {
+
+  .articleFoot p.lu, .articleFoot time.lu {float: left;}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .contentWrapper {
+    padding: 50px 55px;
+
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .contentWrapper {
+    padding: 70px 90px;
+  }
+}
+
+.contentWrapper a {color:#4573ff;}
+.contentWrapper h1 {font-size:36px; font-weight:500; margin-bottom: 0.5em;}
+.contentWrapper p.descrip {font-size: 18px; line-height: 1.6;margin-bottom: 25px;}
+
+#docsSearch {padding: 8em 0; background-image:url(https://blog.easybroker.com/assets/imagenes/headercityblue.png); background-size: cover;}
+#docsSearch h1 {color: white; font-weight: 500;}
+#searchBar button:hover {background: #27d299;}
+#searchBar button {background: #2bd99f; text-shadow: none; border: 0px solid;} 
+
+
+
+/* Categorías */
+#collection-category-8 .category {
+  padding-top: 60px;
+  min-height: 190px;
+}
+
+.category-list .category {
+  background-color: #FFF;
+  border: none;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 0px 1px,
+              rgb(241, 243, 245) 0px 2px 10px 0px,
+              rgba(0, 0, 0, 0.05) 0px 3px 3px 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 30px 30px 0;
+  padding: 135px 50px 40px;
+  min-height: 285px;
+  transition: all 0.25s ease-in-out;
+  width: 100%;
+}
+
+.category-list .category,
+.category-list .category:hover {
+  background-repeat: no-repeat;
+  background-position: center 36px;
+  background-size: 100px 100px;
+}
+
+.category-list .category:hover {
+  background-color: #FFF;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 1px,
+              rgba(220, 223, 226, 0.3) 0px 30px 60px 0px,
+              rgba(0, 0, 0, 0.1) 0px 8px 20px 0px;
+}
+
+
+.category-list .category:hover .article-count {
+    color: #0077CC;
+}
+
+.category-list .category:focus .article-count, .category-list .category:active .article-count {
+    color: #005CA4;
+}
+
+@media screen and (max-width: 759px) {
+  .category-list .category {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1104px) {
+  .category-list .category {
+    width: calc(100%/2 - 17px);
+  }
+
+  .category-list .category:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1105px) {
+  .category-list .category {
+    width: calc(100%/3 - 23px);
+  }
+
+  .category-list .category:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  #collection-category-8 .category {
+    padding-top: 60px;
+    min-height: 190px;
+  }
+}
+
+.category-list h3 {
+  color: #051849;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.category-list .category p {
+  color: #7F8D9B;
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 20px;
+}
+
+.category-list .category .article-count {
+  margin-bottom: 0;
+  color: #4573ff;
+  transition: color 0.2s ease-in-out;
+}
+
+.category-list .category,
+.category-list.two-col .category {
+  margin-bottom: 30px;
+}
+
+.collection-category h2 a {
+  color: #1D2B36;
+}
+
+.collection-category h2 {
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: -0.35px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.collection-category .category-list {
+  margin-bottom: 50px;
+}
+
+.category-list.two-col .category {
+  min-height: 240px;
+  width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+  .category-list.two-col .category {
+    width: calc(100%/3 - 23px)
+  }
+}
+
+.category-list.two-col .category:last-child {
+  margin-right: 0;
+}
+
+/* Íconos */
+
+#category-76 {
+  background-image: url('https://blog.easybroker.com/assets/imagenes/comenzandoconeb.png');
+}
+
+#category-109 {
+  background-image: url('https://blog.easybroker.com/assets/imagenes/estadisticas2.png');
+}
+
+#category-78 {
+  background-image: url('https://blog.easybroker.com/assets/imagenes/propiedades.png');
+}
+
+#category-80 {
+  background-image: url('https://blog.easybroker.com/assets/imagenes/bolsainmobiliaria.png');
+}
+
+#category-77 {
+  background-image: url('https://blog.easybroker.com/assets/imagenes/sitioweb.png');
+}
+
+#category-131 {
+  background-image: url('https://blog.easybroker.com/assets/imagenes/preguntasfrecuentes.png');
+
+}
+
+#category-127 {
+  background-image: url('https://blog.easybroker.com/assets/imagenes/facturacion_2.png');
+}
+
+#category-129 {
+  background-image: url('https://blog.easybroker.com/assets/imagenes/contactos2.png');
+}
+
+#category-130 {
+  background-image: url('https://blog.easybroker.com/assets/imagenes/tareas3.png');
+}
+
+#category-170 {
+  background-image: url('https://blog.easybroker.com/assets/imagenes/portales.png');
+}
+
+#category-166 {
+  background-image: url('https://blog.easybroker.com/assets/imagenes/usuariosroles.png');
+}
+
+#category-188 {
+  background-image: url('https://blog.easybroker.com/assets/imagenes/tucuenta.png');
+}
+
+#category-128 {
+  background-image: url('https://blog.easybroker.com/assets/imagenes/historial.png');
+}
+

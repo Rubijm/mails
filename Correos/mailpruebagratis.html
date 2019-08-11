@@ -1,0 +1,387 @@
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+      table {
+        width:100%;
+        border-collapse:collapse;
+        border-spacing:0;
+      }
+      
+      html,body,.container {
+        background:#fff;
+        color:#202539;
+        font-family:'Avenir Next',Arial,sans-serif;
+        font-size:17px;
+        line-height:1.5;
+        padding:0;
+        margin:0;
+      }
+      
+      h1 {
+        font-size:24px;
+        font-weight:500;
+        line-height:1.2;
+      }
+      
+      a,.force-link,.accent-color {
+        color:#4573FF;
+        text-decoration:none;
+      }
+      
+      a:hover,a:visited,a:active,a:focus {
+        color:#4573FF;
+        text-decoration:underline;
+      }
+      
+      img {
+        max-width:100%;
+      }
+      
+      th {
+        text-align:left;
+      }
+      
+      .icono1 {
+        list-style-image:url(https://gallery.mailchimp.com/0ee55f7d6a8edd5b294710d94/images/36bf0529-5c41-4192-97cc-91f50df5eca8.png);
+      }
+      
+      img ul {
+        height:60px;
+      }
+      
+      .lit {
+        height:50%;
+      }
+      
+      .p-3 {
+        padding:1.5rem;
+      }
+      
+      .pt-3 {
+        padding-top:1.5rem;
+      }
+      
+      .pb-3 {
+        padding-bottom:1.5rem;
+      }
+      
+      .py-3 {
+        padding-top:1.5rem;
+        padding-bottom:1.5rem;
+      }
+      
+      .px-3 {
+        padding-left:1rem;
+        padding-right:1rem;
+      }
+      
+      .m-3 {
+        margin:1.5rem;
+      }
+      
+      .mt-3 {
+        margin-top:1.5rem;
+      }
+      
+      .mb-3 {
+        margin-bottom:1.5rem;
+      }
+      
+      .my-3 {
+        margin-top:1.5rem;
+        margin-bottom:1.5rem;
+      }
+      
+      .mx-3 {
+        margin-left:1.5rem;
+        margin-right:1.5rem;
+      }
+      
+      .p-4 {
+        padding:3rem;
+      }
+      
+      .pt-4 {
+        padding-top:3rem;
+      }
+      
+      .pb-4 {
+        padding-bottom:3rem;
+      }
+      
+      .py-4 {
+        padding-top:3rem;
+        padding-bottom:3rem;
+      }
+      
+      .px-4 {
+        padding-left:3rem;
+        padding-right:3rem;
+      }
+      
+      .m-4 {
+        margin:3rem;
+      }
+      
+      .mt-4 {
+        margin-top:3rem;
+      }
+      
+      .mb-4 {
+        margin-bottom:3rem;
+      }
+      
+      .my-4 {
+        margin-top:1.5rem;
+        margin-bottom:1.5rem;
+      }
+      
+      .mx-4 {
+        margin-left:1rem;
+        margin-right:1rem;
+      }
+      
+      .text-center {
+        text-align:center;
+      }
+      
+      .content,.footer {
+        max-width:600px;
+        margin:0 auto;
+        text-align:center;
+      }
+      
+      .btn {
+        display:inline-block;
+        border-radius:2rem;
+        background:#4573FF;
+        color:#fff;
+        padding:1rem 2rem;
+        font-weight:500;
+      }
+      
+      .btn:hover {
+        text-decoration:none;
+        color:#fff;
+      }
+      
+      .footer hr {
+        border-top:1px solid #F2F4F7;
+        border-bottom:0;
+        margin-top:0;
+      }
+      
+      .footer td {
+        font-size:.85rem;
+        color:#595E6C;
+      }
+      
+      .footer a,.footer a:hover,.footer a:focus,.footer a:active {
+        color:#595E6C;
+      }
+      
+      .social-links a {
+        display:inline-block;
+        margin-right:1rem;
+      }
+      
+      .footer .spacer {
+        margin:.66rem;
+        color:#838691;
+      }
+      
+      .texto {
+        position:absolute;
+        top:46%;
+        font-size:18px;
+        width:40%;
+        left:390px;
+        color:white;
+        font-weight:initial;
+      }
+      
+      .iconos {
+
+      	width: 110px; 
+      	padding-top: 20px;
+      }
+
+      .tablag {
+
+      	width:80%;margin-top:20px;margin-left:10%;
+
+
+      }
+      .imagen {
+        position:absolute;
+        left:45.8%;
+        margin-top:20px;
+      }
+      
+      .header {
+        background:#4573FF;
+        color:#fff;
+      }
+      
+      .header h1 {
+        font-size:20px;
+        font-weight:normal;
+        margin-top:0;
+        position:relative;
+        top:300px;
+      }
+      
+      @media (max-width: 768px) {
+        .content {
+          padding:.5rem;
+        }
+      }
+
+
+      @media (max-width: 768px) {
+        .iconos {
+          width: 200px;
+        }
+
+         .tablag {width: 25%; margin-left: 0;
+
+
+         }
+      }
+      
+      @media (max-width: 768px) {
+        .mb-4 {
+          margin-bottom:2rem !important;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .mt-4 {
+          margin-top:2rem !important;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .footer-links a {
+          display:block;
+          margin-bottom:10px;
+          margin-right:0 !important;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .footer .spacer {
+          display:none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table class="container" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          <table class="content">
+            <tr>
+              <td>
+                <table class="content">
+                  <tr>
+                    <td class="px-3 pt-4">
+                      
+                      
+                      <!--
+                      <img src="https://gallery.mailchimp.com/0ee55f7d6a8edd5b294710d94/images/8cb13727-62f7-489f-acb1-653dd714002a.png" alt="" border="0" style="margin: 0; background:#4573FF; padding: 40px 0;" mc:edit="coverimage">
+                      <h3 class="texto">Cierra más tratos, analiza tu negocio inmobiliario para que puedas mejorarlo y destaca sobre tu competencia</h3>
+                      
+                      -->
+                      <table class="header">
+                        <tr>
+                          <td>
+                            <a href="https://www.easybroker.com/mx?source=emailaut" target="_blank"><img class="imagen" src="https://gallery.mailchimp.com/0ee55f7d6a8edd5b294710d94/images/bec606d0-64a3-49a3-8348-ef9033577710.png" alt="EasyBroker" height="20"></a>
+                            <h1 class="defaultTitle" mc:edit="title" style="margin-top:20px;">Cierra más tratos, analiza tu negocio inmobiliario para que puedas mejorarlo y destaca sobre tu competencia</h1>
+                            <a href="https://www.easybroker.com/mx?source=emailaut">  <img mc:edit="coverimage" style="padding: 20px 0; width: 30%;" src="https://gallery.mailchimp.com/0ee55f7d6a8edd5b294710d94/images/6fe02502-23c5-4f5d-9e8d-2a89d55499b8.png" alt=""></a>
+                          </td>
+                        </tr>
+                      </table>
+                      <h2 style="font-weight:400;">Lo que obtienes con EasyBroker:</h2>
+                      <table class="tablag">
+                        <tr style="text-align:left;">
+                          <th>
+                            
+                            <img class="iconos" src="https://gallery.mailchimp.com/0ee55f7d6a8edd5b294710d94/images/388d3117-ef8e-42ae-b524-f9a263044cfe.png" alt="388d3117-ef8e-42ae-b524-f9a263044cfe.png">
+                          </th>
+                          <th style="font-weight:inherit;font-size:15px;padding-top:20px;padding-left:10px;">Comparte propiedades con tus datos de contacto sin importar que las propiedades sean tuyas o de tus colegas usando la Bolsa Inmobiliaria.</th>
+                        </tr>
+                        <tr>
+                          <th>
+                            <img class="iconos" src="https://gallery.mailchimp.com/0ee55f7d6a8edd5b294710d94/images/ba8b7eb1-12bd-4090-8b87-bc1666d77b43.png" alt="ba8b7eb1-12bd-4090-8b87-bc1666d77b43.png">
+                          </th>
+                          <th style="font-size:15px;font-weight:inherit;padding-top:20px;padding-left:10px;">Responde solicitudes de clientes potenciales vía correo o WhatsApp desde tu Buzón. </th>
+                        </tr>
+                        <tr>
+                          <th>
+                            
+                            <img class="iconos" src="https://gallery.mailchimp.com/0ee55f7d6a8edd5b294710d94/images/388d3117-ef8e-42ae-b524-f9a263044cfe.png" alt="388d3117-ef8e-42ae-b524-f9a263044cfe.png">
+                          </th>
+                          
+                          <th style="font-size:15px;font-weight:inherit;padding-top:20px;padding-left:10px;">
+                            Crea un sitio profesional sin ayuda de un diseñador.
+                          </th>
+                        </tr>
+                        <tr>
+                          <th>
+                            
+                            <img class="iconos"src="https://gallery.mailchimp.com/0ee55f7d6a8edd5b294710d94/images/00d31cb6-47e9-41fd-a579-d2683837922b.png" alt="00d31cb6-47e9-41fd-a579-d2683837922b.png">
+                          </th>
+                          <th style="font-size:15px;font-weight:inherit;padding-top:20px;padding-left:10px;">
+                            Vincula tu cuenta con portales inmobiliarios.
+                          </th>
+                        </tr>
+                      </table>
+                      <div class="pt-4 mb-4">
+                        <a class="btn" style="color:#fff;" href="https://www.easybroker.com/mx?source=emailaut" target="_blank">Pruébalo ahora</a>
+                      </div>
+                      
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table class="footer">
+                  <tr>
+                    <td>
+                      <hr class="mb-3">
+                      <div class="social-links mb-3">
+                        <a href="https://www.facebook.com/easybroker.es/" target="_blank">
+                          <img src="https://gallery.mailchimp.com/0ee55f7d6a8edd5b294710d94/images/a8bfd872-de1d-46e6-88db-96440490ab29.png" alt="" height="33"></a>
+                          <a href="https://twitter.com/easybroker" target="_blank">
+                            <img src="https://gallery.mailchimp.com/0ee55f7d6a8edd5b294710d94/images/5429356d-a24d-4792-99ec-d7a88a068044.png" alt="" height="33"></a>
+
+                            <a href="https://instagram.com/easybrokers" target="_blank">
+                            	<img src="https://gallery.mailchimp.com/0ee55f7d6a8edd5b294710d94/images/421b5fa0-d9a1-45d4-98ab-e8653d9d57f6.png" height="33">
+                            
+                          </div>
+                          <div class="footer-links">
+                            <a href="*|ARCHIVE|*" target="_blank">ver en tu navegador</a>
+                            <span class="spacer">·</span>
+                            <a href="https://blog.easybroker.com" target="_blank">visitar nuestro blog</a>
+                            <span class="spacer">·</span>
+                            <a href="*|UNSUB|*" target="_blank">cancelar subscripción</a>
+                          </div>
+                          <p>
+                          Enviado por <a href="https://easybroker.com" target="_blank">EasyBroker</a> - 8345 NW 66 St. #4672, Miami, FL 33166
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </body>
+</html>

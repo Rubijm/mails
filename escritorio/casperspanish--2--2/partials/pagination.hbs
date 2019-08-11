@@ -1,0 +1,13 @@
+<nav style="text-align: center; padding-bottom: 30px;"> 
+    {{#if prev}}
+        <a style="background: #bfbfbf; color:white; padding: 10px; border-radius: 25px; font-size:13px;> "class="newer-posts" href="{{page_url prev}}">&larr; Entradas recientes</a>
+
+        {{/if}}
+   
+    {{#if next}}
+   
+        <a style="background: #bfbfbf; color:white; padding: 10px; border-radius: 25px; font-size: 13px;>" class="older-posts" href="{{page_url next}}"> Entradas anteriores &rarr;</a>
+    {{/if}}
+
+
+</nav>

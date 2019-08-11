@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>La interrupción del servicio del 18 y 19 de marzo</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">La interrupción del servicio del 18 y 19 de marzo</h1>
+</header>
+<section data-field="body" class="e-content">
+<section name="8e00" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="74da" id="74da" class="graf graf--h3 graf--leading graf--title">La interrupción del servicio del 18 y 19 de marzo</h3><p name="16c6" id="16c6" class="graf graf--p graf-after--h3">A continuación se presenta un resumen detallado de las causas del corte de servicio que ocurrió el 18 y 19 de marzo, así como nuestra respuesta ante el problema y las acciones a adoptar para garantizar que un corte de servicio no vuelva a ocurrir. En total hubo alrededor de 8 horas de tiempo de inactividad para los sitios web de nuestros clientes y 2 horas de tiempo de inactividad para la parte del CRM de EasyBroker. La última vez que tuvimos una interrupción imprevista fue el 14 de febrero de 2012, hace ya más de un año. Durante este último año hemos mantenido un tiempo activo de más de 99%. Sin embargo, entendemos que EasyBroker es fundamental para su negocio por lo cual planeamos tomar medidas para garantizar una respuesta rápida y adecuada en una situación similar.</p><p name="c6cc" id="c6cc" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">El problema y los varios intentos para solucionarlo</strong></p><p name="39eb" id="39eb" class="graf graf--p graf-after--p">El 18 de marzo nuestro servidor principal de producción empezó a comportarse de forma extraña. Después de reiniciarlo y hacer algunos ajustes -los cuales tomaron alrededor de una hora- éste volvió a estar en línea. Durante el día estuvimos investigando con nuestro host Rackspace sin poder encontrar la causa de lo sucedido.</p><p name="5bab" id="5bab" class="graf graf--p graf-after--p">Lamentablemente en la mañana del 19 el problema reapareció; esta vez no logramos que el servidor volviera a estar en línea. Tratamos de cambiar a un servidor virtual, pero desafortunadamente, mientras migrábamos el servidor, Rackspace tuvo un corte con su servidor de Cloud Files que causó que nuestra migración se congelara. Al tratar de resolver el problema de la migración con Rackspace lanzamos un nuevo servidor con una dirección IP diferente. Dentro de poco tiempo el CRM de EasyBroker estaba funcionando de nuevo. Por desgracia, todos los nombres de dominio de los sitios web de nuestros clientes estaban apuntando a la dirección IP del servidor antiguo. Probablemente tomaría de 4 a 8 horas para migrar a la nueva IP. Por otro lado, Rackspace nos comentó que tardaría unos 30 minutos en arreglar el problema con el servicio de Cloud Files así que decidimos que sería mejor esperar.</p><p name="356a" id="356a" class="graf graf--p graf-after--p">Desafortunadamente, después de que el servicio Cloud Files regresó, Rackspace no pudo descongelar el proceso de migración. Después de 5 horas de trabajo Rackspace se dio cuenta de que había un problema con el hardware, lo más probable con el disco duro, el cuál también era la causa principal de los problemas ocurridos hasta ahora. Rackspace hizo un cambio de hardware después de lo cual se pudo completar la migración del servidor.</p><p name="c256" id="c256" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Medidas para mitigar interrupciones futuras</strong></p><p name="13a5" id="13a5" class="graf graf--p graf-after--p">El mayor problema que tuvimos con este corte es que no se podía hacer el cambio a un nuevo servidor porque la dirección IP estaba “atada” al servidor actual. Esto no habría sido un factor si se hubieran utilizado registros CNAME en lugar de registros A para cada uno de los dominios de nuestros clientes. Un simple cambio de DNS habría solucionado todo. Ya hemos actualizado todos los nombres de dominio de todos los dominios de nuestros clientes que gestionamos para usar CNAME.</p><p name="c45c" id="c45c" class="graf graf--p graf-after--p">Otra manera en que se podría haber resuelto el problema es mediante el uso de un “equilibrador de carga” de modo que fácilmente se pudiera cambiar a un nuevo servidor sin tener que desmontar EasyBroker. Un equilibrador de carga nos permitiría utilizar una sola dirección IP para múltiples servidores. Actualmente estamos en el proceso de agregar un equilibrador de carga para que en el futuro podamos resolver este problema sin, o con al menos muy poco, tiempo de inactividad.</p><p name="d35c" id="d35c" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Conclusión</strong></p><p name="75fb" id="75fb" class="graf graf--p graf-after--p graf--trailing">Lamentamos mucho el tiempo de inactividad ya que sabemos afecta a cada uno de nuestros clientes. En los últimos años hemos mantenido un tiempo activo de más de 99%, sin embargo, seguiremos tomando medidas adicionales para reducir la posibilidad de cortes de este tipo en el futuro.</p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/easybroker" class="p-tag">Easybroker</a></p><p>By <a href="https://medium.com/@isaac_eb" class="p-author h-card">Isaac Vázquez</a> on <a href="https://medium.com/p/ac3b014a8519"><time class="dt-published" datetime="2013-04-11T22:44:06.000Z">April 11, 2013</time></a>.</p><p><a href="https://medium.com/@isaac_eb/la-interrupci%C3%B3n-del-servicio-del-18-y-19-de-marzo-ac3b014a8519" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on December 4, 2018.</p></footer></article></body></html>
